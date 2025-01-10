@@ -1,0 +1,166 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+header {
+  background: linear-gradient(90deg, #fa7f83, #ffc8db);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+nav p {
+  color: white;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
+main {
+  
+  padding: 10px;
+  background-color: white;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+label {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+
+select,
+input[type="date"],
+input[type="time"] {
+  font-size: 16px;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+select:focus,
+input[type="date"]:focus,
+input[type="time"]:focus {
+  border-color: #dea4e6;
+  outline: none;
+}
+
+
+#serviceType,
+#subType {
+  font-size: 16px;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+#serviceType:focus,
+#subType:focus {
+  border-color: #ec4d95;
+  outline: none;
+}
+
+
+option {
+  padding: 10px;
+}
+
+
+button {
+  padding: 10px;
+  background-color:#ea4690;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color:#1ab5a8}
+
+
+.appointment-details {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f4f9fc;
+  border: 1px solid #f1f4f6;
+  border-radius: 8px;
+}
+
+.appointment-details h3 {
+  font-size: 25px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.appointment-details p {
+  font-size: 16px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.appointment-details strong {
+  color: #5e5e5e;
+}
+
+
+footer {
+  background-color: #fa7f83;
+  color: white;
+  padding: 0px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

@@ -1,0 +1,169 @@
+
+h1 p {
+  font-size: 48px; 
+  font-weight: bold;
+  text-align: center; 
+  padding: 20px;             
+       
+  border-radius: 5px;  
+    background-color:#fa7f83; 
+    color: #262121;          
+        
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color:#e61d1d;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin: 20px 0;
+  color: #5a5a5a;
+}
+
+p {
+  font-size: 18px;
+  color: #777;
+}
+
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+  background-color:#edb2f4;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.service-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.service-image {
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.service-image:hover {
+  transform: scale(1.05);
+}
+
+.service-details {
+  flex: 1;
+  padding: 20px;
+  background-color: #efefef; 
+  border-radius: 10px;
+  margin-left: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.service-details:hover {
+  background-color: #f4cbe1;
+}
+
+.service-details h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: bold;
+}
+
+.service-details ul {
+  list-style: none;
+}
+
+.service-details ul li {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.service-details ul li::before {
+  content: "\25CF";
+  color: #4CAF50;
+  margin-right: 8px;
+ 
+}
+
+.booking-button {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.booking-button button {
+  padding: 15px 30px;
+  background-color: #ec4d95;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.booking-button button:hover {
+  background-color: #2a95a9;
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+  .service-item {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .service-details {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .service-image {
+    max-width: 100%;
+  }
+
+  .booking-button button {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .service-details h2 {
+    font-size: 24px;
+  }
+
+  .service-details ul li {
+    font-size: 16px;
+  }
+
+  .service-image {
+    max-width: 90%;
+  }
+}
